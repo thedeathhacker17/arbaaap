@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:backgroundTint="#98AFC7"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/otp_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter OTP"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="@color/black" />
+
+    <!-- OTP Input Field -->
+    <EditText
+        android:id="@+id/otp_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter OTP"
+        android:padding="10dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:maxLength="6"/>
+
+    <!-- Submit OTP Button -->
+    <Button
+        android:id="@+id/submit_otp_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColorLink="@color/black"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

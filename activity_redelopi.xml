@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5"
+    android:gravity="center">
+
+    <!-- Centered Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Device Login Pin"
+            android:textSize="30dp"
+            android:textColor="#3A3B3C"
+            android:textStyle="bold"
+            android:layout_marginBottom="40dp"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <!-- Input Field for Reset Login Pin -->
+        <EditText
+            android:id="@+id/resetLoginPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Reset Login Pin"
+            android:inputType="numberPassword"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:textColorHint="#8A8A8A" />
+
+        <!-- Input Field for Confirm Login Pin -->
+        <EditText
+            android:id="@+id/confirmLoginPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Login Pin"
+            android:inputType="numberPassword"
+            android:background="@android:color/white"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:layout_marginBottom="24dp"
+            android:textColorHint="#8A8A8A" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#045f5f"
+            android:elevation="4dp"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+</LinearLayout>

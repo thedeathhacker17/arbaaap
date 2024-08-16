@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#808080"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registration Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Full Name Field -->
+        <EditText
+            android:id="@+id/full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"/>
+
+        <!-- Email ID Field -->
+        <EditText
+            android:id="@+id/email_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Business Address Field -->
+        <EditText
+            android:id="@+id/business_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Business Address"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPostalAddress"/>
+
+        <!-- Phone Number Field -->
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="phone"/>
+
+        <!-- Terms & Conditions CheckBox -->
+        <CheckBox
+            android:id="@+id/terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agree with Terms  Conditions"
+            android:paddingBottom="16dp"/>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+        <!-- Already a member Text -->
+        <TextView
+            android:id="@+id/already_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I'm already a member"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</LinearLayout>

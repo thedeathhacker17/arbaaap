@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:gravity="center">
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Registration"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- First Name Field -->
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPersonName"/>
+
+        <!-- Middle Name Field -->
+        <EditText
+            android:id="@+id/middle_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Middle Name"
+            android:padding="10dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textPersonName"/>
+
+        <!-- Last Name Field -->
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPersonName"/>
+
+        <!-- Mother Tongue Field -->
+        <EditText
+            android:id="@+id/mother_tongue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mother Tongue"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"/>
+
+        <!-- Date of Birth Field -->
+        <EditText
+            android:id="@+id/dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth (DD/MM/YYYY)"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="date"/>
+
+        <!-- Mobile Number Field -->
+        <EditText
+            android:id="@+id/mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="phone"/>
+
+        <!-- Email Address Field -->
+        <EditText
+            android:id="@+id/email_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Residential Address Field -->
+        <EditText
+            android:id="@+id/residential_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House No/Building Name/Street Name/Area Name/City/Town/Pincode/District/State"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textPostalAddress"/>
+
+        <!-- Gender Field -->
+        <RadioGroup
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other" />
+        </RadioGroup>
+
+        <!-- Dietary Preference Field -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietary Preference"
+            android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
+
+        <RadioGroup
+            android:id="@+id/dietary_preference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/vegan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegan" />
+
+            <RadioButton
+                android:id="@+id/vegetarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vegetarian" />
+
+            <RadioButton
+                android:id="@+id/non_vegetarian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Non-Vegetarian" />
+        </RadioGroup>
+
+        <!-- Preferred Report Language Field -->
+        <EditText
+            android:id="@+id/preferred_report_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preferred Report Language"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"/>
+    </LinearLayout>
+</ScrollView>
